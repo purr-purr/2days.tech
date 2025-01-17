@@ -1,0 +1,64 @@
+.container {
+	&:hover p {
+		color: $primary;
+		transition: color 0.3s ease-in-out;
+	}
+}
+
+.link {
+	@include flex(center, center);
+	flex-wrap: wrap;
+	padding-block: 18px;
+}
+
+.title {
+	@include font(Neofolia);
+	font-size: 80px;
+	color: $dark;
+	text-transform: uppercase;
+	transition: color 0.3s ease-in-out;
+
+	@include media($laptop-bp) {
+		font-size: 70px;
+	}
+
+	@include media($mobile-bp) {
+		font-size: 30px;
+	}
+
+	&--separator {
+		&:first-of-type {
+			margin-right: 9px;
+
+			@include media($mobile-bp) {
+				margin-right: 4px;
+			}
+		}
+
+		&:last-of-type {
+			margin-left: 9px;
+
+			@include media($mobile-bp) {
+				margin-left: 4px;
+			}
+		}
+	}
+}
+
+.poster {
+	@include flex($justify: center);
+	overflow: hidden;
+	width: 0;
+
+	&Image {
+		display: block;
+		height: auto;
+		width: min(210px, 210px);
+		margin-inline: 5px;
+
+		@include media($laptop-bp) {
+			width: min(180px, 180px);
+			height: 110px;
+		}
+	}
+}

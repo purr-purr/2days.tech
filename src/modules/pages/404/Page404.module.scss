@@ -1,0 +1,26 @@
+.container {
+	@include flex($align: center, $justify: center);
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.code {
+	@include flex(center, center, 24px);
+	color: $primary;
+	font-size: 150px;
+	font-weight: 700;
+	font-variant: lining-nums;
+
+	@include media($mobile-bp) {
+		font-size: 100px;
+		gap: 16px;
+	}
+}
+
+.description {
+	font-weight: 400;
+	text-align: center;
+	color: $dark;
+}

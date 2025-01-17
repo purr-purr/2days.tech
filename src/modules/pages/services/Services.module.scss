@@ -1,0 +1,57 @@
+.container {
+	position: relative;
+	z-index: 2;
+}
+
+.description {
+	max-width: 758px;
+	width: 100%;
+	margin-block: 80px 174px;
+	font-size: var(--large);
+
+	@include media($mobile-bp) {
+		margin-block: 40px;
+		max-width: unset;
+	}
+}
+
+.offer {
+	@include flex($justify: center, $gap: 40px);
+
+	@include media($mobile-bp) {
+		flex-direction: column;
+	}
+
+	&Description {
+		max-width: 622px;
+		width: 100%;
+
+		@include media($mobile-bp) {
+			max-width: unset;
+		}
+	}
+}
+
+.offerList {
+	font-weight: 300;
+	list-style-type: none;
+	margin-top: 6px;
+	min-width: 401px;
+	font-size: var(--medium);
+
+	@include media($mobile-bp) {
+		min-width: unset;
+	}
+
+	& li {
+		padding-left: 14px;
+		@include pseudo() {
+			left: 0;
+			top: 8px;
+			width: 3px;
+			height: 3px;
+			border-radius: 50%;
+			background-color: $dark;
+		}
+	}
+}

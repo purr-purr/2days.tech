@@ -1,0 +1,51 @@
+.container {
+	position: relative;
+	z-index: 2;
+}
+
+.heading {
+	margin-bottom: 216px;
+
+	@include media($mobile-bp) {
+		margin-bottom: 60px;
+	}
+}
+
+.description {
+	font-size: var(--large);
+}
+
+.links {
+	width: 50%;
+	margin-left: auto;
+	margin-top: 40px;
+
+	@include media($laptop-bp) {
+		margin-top: 100px;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	@include media($mobile-bp) {
+		margin-top: 60px;
+	}
+
+	&List {
+		@include flex($gap: 20px);
+		flex-wrap: wrap;
+		list-style-type: none;
+		margin-top: 40px;
+
+		@include media($laptop-bp) {
+			margin-top: 40px;
+		}
+
+		@include media($mobile-bp) {
+			margin-top: 30px;
+		}
+
+		@include media($low-mobile-bp) {
+			flex-direction: column;
+		}
+	}
+}
