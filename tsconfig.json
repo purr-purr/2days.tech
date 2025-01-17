@@ -22,6 +22,7 @@
 			"@hooks/*": ["./src/hooks/*"],
 			"@utils/*": ["./src/utils/*"],
 			"@styles/*": ["./src/assets/styles/*"],
+			"@images/*": ["./src/assets/images/*"],
 			"@public/*": ["./public/*"]
 		}
 	},

@@ -1,6 +1,6 @@
 export const COMPANY_INFO = {
-	NAME: 'Today',
-	TYPE: 'Studio',
+	NAME: `2Day\'s`,
+	TYPE: 'Tech',
 	EMAIL: 'hello@today-studio.ie',
 	LINKEDIN: 'https://www.linkedin.com/company/today-studio-ie/',
 	WHATSAPP: 'https://wa.link/rbh0tv',
@@ -94,11 +94,11 @@ export const PROJECTS = [
 ];
 
 export const CATCH_WORDS = [
-	'will be sunny',
-	'brings possibilities',
-	'we bring your ideas to life',
-	'we have the solution',
-	'improve your business',
-	'is the best day for changes',
-	'promises solutions',
+	'and it’s ready',
+	'to launch',
+	'to success',
+	'to perfection',
+	'and we bring your ideas to life',
+	'and we have the solution',
+	'and we improve your business',
 ];

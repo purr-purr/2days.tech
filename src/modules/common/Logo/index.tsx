@@ -7,9 +7,10 @@ import { COMPANY_INFO } from '@utils/data';
 import s from './Logo.module.scss';
 
 const Logo: FC<{ classname?: string }> = ({ classname }) => {
+	const logoText = `${COMPANY_INFO.NAME} ${COMPANY_INFO.TYPE}`;
 	return (
 		<Link className={cn(classname, s.container)} href="/">
-			{COMPANY_INFO.NAME.toUpperCase()}
+			{logoText.toUpperCase()}
 		</Link>
 	);
 };

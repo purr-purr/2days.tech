@@ -13,9 +13,9 @@ const Contacts: FC = () => {
 	const pageDescription =
 		"Get in touch to kickstart your digital journey. Let's build something remarkable together!";
 	const contactsList = [
-		{ title: 'Start a project', link: `mailto:${COMPANY_INFO.EMAIL}` },
-		{ title: 'Connect via WhatsApp', link: `${COMPANY_INFO.WHATSAPP}` },
-		{ title: 'Check our LinkedIn', link: COMPANY_INFO.LINKEDIN },
+		{ title: 'Start a project', link: `mailto:${COMPANY_INFO.EMAIL}`, isVisible: true },
+		{ title: `Let\'s chat via WhatsApp`, link: `${COMPANY_INFO.WHATSAPP}`, isVisible: false },
+		{ title: 'Check our LinkedIn', link: COMPANY_INFO.LINKEDIN, isVisible: false },
 	];
 	return (
 		<article className={s.container}>
@@ -26,7 +26,7 @@ const Contacts: FC = () => {
 			<div className={s.links}>
 				<p className={s.description}>{pageDescription}</p>
 				<ul className={s.linksList}>
-					{contactsList.map((item) => (
+					{contactsList.map((item) => item.isVisible && (
 						<li key={item.link}>
 							<Link href={item.link} title={item.title} />
 						</li>
