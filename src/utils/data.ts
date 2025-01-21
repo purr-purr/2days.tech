@@ -1,5 +1,5 @@
 export const COMPANY_INFO = {
-	NAME: `2Day\'s`,
+	NAME: `2Days`,
 	TYPE: 'Tech',
 	EMAIL: 'hello@today-studio.ie',
 	LINKEDIN: 'https://www.linkedin.com/company/today-studio-ie/',

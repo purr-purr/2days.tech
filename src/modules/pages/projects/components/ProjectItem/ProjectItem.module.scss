@@ -6,7 +6,7 @@
 }
 
 .link {
-	@include flex(center, center);
+	@include flex();
 	flex-wrap: wrap;
 	padding-block: 18px;
 }

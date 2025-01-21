@@ -46,6 +46,10 @@ const ProjectItem: FC<{ project: IProjectsList }> = ({ project }) => {
 				>
 					{project.titleFirstPart}
 				</p>
+				<p className={cn(
+					s.title,
+					project.isWithSeparator && !isActive && s[`title--separator`],
+				)}>{project.titleLastPart}</p>
 				{!isMobile && (
 					<motion.div
 						variants={animation}
@@ -59,10 +63,6 @@ const ProjectItem: FC<{ project: IProjectsList }> = ({ project }) => {
 						/>
 					</motion.div>
 				)}
-				<p className={cn(
-					s.title,
-					project.isWithSeparator && !isActive && s[`title--separator`],
-				)}>{project.titleLastPart}</p>
 			</Link>
 		</li>
 	);
